@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)http://127.0.0.1:5500/html/index.html -->
+<html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Este computador</title>
+    <link rel="icon" href="./Este computador_files/ícone bola.png">
+</head>
+
+
+<body class="corpo">
+    <header>
+        <div class="decoracao">
+
+        </div>
+        <div class="caixa">
+        <h1 class="título">Bem-vindo ao meu site!</h1>
+    </div>
+        
+    </header>
+    
+    <article class="caixote">
+        <h2>
+            Título secundários
+        </h2>
+
+
+        <img src="./Este computador_files/ícone bola.png" class="imagem">
+        
+        
+        
+    </article>
+
+    <input>
+    <button>
+        enviar
+    </button>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+<style>
+    .corpo, html {
+        background-color: gray ;
+        padding: 0;
+        margin: 0;
+    }
+    .imagem {
+        width:100px;
+    }
+    .caixote {
+        background-color: antiquewhite;
+        margin: 50px;
+        width: 20 px;
+    }
+    .título {
+        font-size: 60px;
+        color: white;
+    }
+    .caixa {
+        background-color: black;
+    }
+    
+    .decoracao {
+        height: 40px;
+        background-color: aquamarine;
+        position: absolute;
+        top: 0;
+        width: 100vw;
+    }
+
+</style></body></html>
